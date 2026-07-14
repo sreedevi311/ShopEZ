@@ -1,0 +1,75 @@
+/* Import Google Fonts for that premium fashion retail look */
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap');
+
+:root {
+  /* Myntra Fashion Design Tokens */
+  --primary-pink: #ff3f6c;
+  --primary-hover: #e0355f;
+  --text-dark: #282c3f;
+  --text-white: #ffffff;
+  --text-muted: #7e808c;
+  --bg-light: #f5f5f6;
+  --border-color: #eaeaec;
+  --white: #ffffff;
+  
+  --font-main: 'Assistant', sans-serif;
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 16px rgba(40, 44, 63, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-dark);
+  background-color: hsl(8, 96%, 79%);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Global Reusable Class Utilities */
+.btn-primary {
+  background-color: var(--primary-pink);
+  color: var(--white);
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 4px;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-family: var(--font-main);
+  font-size: 14px;
+  color: var(--text-dark);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input-field:focus {
+  border-color: var(--text-dark);
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
